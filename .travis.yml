@@ -1,0 +1,7 @@
+language: minimal
+script:
+- git remote set-url --push origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}
+- ./mirror.mk
+env:
+  global:
+    - secure: hpS1jqAr8Vcf43QhBkru3KnLc7M0qSNW0ZEblU0ZwchLz5DPcPQfYpi0Oy4Vrm4tmw7kQuWcIbjntECSLhsNkiJqz1ZrRugyKyw6C7+4tG8xnNY7YrpiLfEk6wDlzmbksOMVcp0Mc/4ikvii55ITAFXe8Opie02+Vfe0XZ6goNe8R2Cu/gcHiQMmBOgHLZzJfguFxnbY0VVbYmCz5SyGM4TjdMN2sKjQgMhNtlwlQapktRxBtwhArrclP/Hm+ZuE4LXwB/bjlEUOSuSIKq5Q+gyeh6e96d+O5bSnBMLUJeQRfYjWLDlE8MO5dXbJmAJPOeHnnENHLJ6VuPs+a1B8mPG2j4KOOUTpuv/V0d5lRuJFHEs+/fzIx7HQdzp1j5DIg2/92E1n5SHi3s8UyRdqciZ8p9M1E66KnlI2ItHaOL1xBnvNhewLRh9O5rZBR+eUP28UdI408/47eRlK8eRFjYYltVLHl2Wh1nIEmN3hnjRX6py1Ot8xAHn7xBPss9VlYO/1r9678Ep/5GqOT5s5goRkl8qWyqcq5f+FGErPvsvKhyOgFrpXY1aO7aokRhOw5ykFrb8OgnWkRODEZ+x5+6OZlnQqg7zVL9xYYjbKAS/y4kriWzfNQZPt1bjraTpeRyC1NTUsXrd3AAojv/vK2CKKr10FNIkJWl3S9nbhOG0=
